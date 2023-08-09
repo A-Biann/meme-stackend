@@ -1,0 +1,19 @@
+<div class="upload">
+  <button class="upload_button"
+          mat-raised-button
+          color="primary"
+          (click)="openUrlDialog()">Paste URL
+  </button>
+</div>
+
+<div *ngIf="urlDialogVisible" class="url-dialog"><br>
+  <input matInput
+         placeholder="Paste image URL"
+         [(ngModel)]="imageUrl"
+         class="url-dialog-input">
+  <div class="url-dialog-button">
+    <button mat-raised-button (click)="closeUrlDialog()">Cancel</button> &nbsp;
+    <button mat-raised-button (click)="onUrlSubmit()">Submit</button>
+  </div>
+
+</div>

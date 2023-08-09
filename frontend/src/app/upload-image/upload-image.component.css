@@ -1,0 +1,30 @@
+.upload {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.upload_button {
+  height: 3rem;
+  width: 11rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.url-dialog {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.url-dialog-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.url-dialog-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}

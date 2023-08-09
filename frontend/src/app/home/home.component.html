@@ -1,0 +1,8 @@
+<mat-horizontal-stepper [linear]="true">
+  <mat-step label="Upload Your Image" [completed]="false">
+    <app-upload-image (imageUrlUpdated)="onImageUpdate($event)"></app-upload-image>
+  </mat-step>
+  <mat-step label="Create Your Meme" >
+    <app-generate-meme [imageUrl]="imgUrl"></app-generate-meme>
+  </mat-step>
+</mat-horizontal-stepper>

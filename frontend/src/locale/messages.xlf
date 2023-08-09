@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="381364731022507597" datatype="html">
+        <source> MEME GENERATOR </source>
+        <note priority="1" from="description"> Title for meme generator</note>
+        <note priority="1" from="meaning">main header </note>
+      </trans-unit>
+      <trans-unit id="loginButton" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>login<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Login </source>
+      </trans-unit>
+      <trans-unit id="logoutButton" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>logout<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Logout </source>
+      </trans-unit>
+      <trans-unit id="welcomeMessage" datatype="html">
+        <source>Welcome to our app!</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,56 @@
+<mat-toolbar class="navbar">
+  <div class="logo">
+    <h1 i18n="main header | Title for meme generator">
+      MEME GENERATOR
+    </h1>
+  </div>
+  <div>
+    <button mat-button (click)="goToHome()">HOME</button>
+  </div>
+  <div class="menu-button">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <div *ngIf="!isLoggedIn()">
+        <button mat-menu-item (click)="login()" i18n="@@loginButton">
+          <mat-icon>login</mat-icon>
+          Login
+        </button>
+      </div>
+      <div *ngIf="isLoggedIn()">
+        <mat-card>
+          <div class="user-profile">
+            <img *ngIf="userInfo?.info?.picture" [src]="userInfo?.info?.picture" alt="User Profile">
+            <div>
+              <p class="user-name">{{ userInfo?.info?.name }}</p>
+              <p class="user-email">{{ userInfo?.info?.email }}</p>
+            </div>
+          </div>
+        </mat-card>
+        <button mat-menu-item (click)="logout()" i18n="@@logoutButton">
+          <mat-icon>logout</mat-icon>
+          Logout
+        </button>
+      </div>
+
+      <!-- Add a separate mat-menu-item for mat-select -->
+      <button mat-menu-item (click)="$event.stopPropagation()">
+        <mat-select
+          (selectionChange)="onSelectionChange($event.value)"
+          [value]="displayLanguage"
+          class="selectContainer"
+        >
+          <mat-select-trigger>
+            <div class="select-trigger-container">
+              <mat-icon>language</mat-icon>
+              {{ displayLanguage }}
+            </div>
+          </mat-select-trigger>
+          <mat-option *ngFor="let language of languageList" [value]="language.code">{{ language.name }}</mat-option>
+        </mat-select>
+      </button>
+
+    </mat-menu>
+  </div>
+</mat-toolbar>

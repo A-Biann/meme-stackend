@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1988a339-f9ac-42a5-9509-05032e07ca80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/.gcloudignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ImageApi/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="G3PluginsProjectSettings">
+    <appliedSettings>
+      <entry key="LinkifyInternalShortlinks" value="true" />
+      <entry key="RecognizedNullableAnnotations" value="true" />
+    </appliedSettings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2TF0tq7AY5c2jznoidzPSBCPsLu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "AutoIdentifyTypo3Version": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "TYPO3AuthorEmailAddress": "myname@example.org",
+    "TYPO3AuthorName": "My Name",
+    "TYPO3PathToExtensionDomainModels": "Classes/Domain/Model/",
+    "TYPO3PathToLocalExtensions": "typo3conf/ext/",
+    "TYPO3PathToSystemExtensions": "typo3/sysext/",
+    "TYPO3ProjectConfigured": "true",
+    "TYPO3Version": "None",
+    "TYPO3XliffLanguages": "af:Afrikaans;\nar:Arabic;\nbs:Bosnian;\nbg:Bulgarian;\nca:Catalan;\nch:Chinese (Simpl.);\ncs:Czech;\nda:Danish;\nde:German;\nel:Greek;\neo:Esperanto;\nes:Spanish;\net:Estonian;\neu:Basque;\nfa:Persian;\nfi:Finnish;\nfo:Faroese;\nfr:French;\nfr_CA:French (Canada);\ngl:Galician;\nhe:Hebrew;\nhi:Hindi;\nhr:Croatian;\nhu:Hungarian;\nis:Icelandic;\nit:Italian;\nja:Japanese;\nka:Georgian;\nkl:Greenlandic;\nkm:Khmer;\nko:Korean;\nlt:Lithuanian;\nlv:Latvian;\nms:Malay;\nnl:Dutch;\nno:Norwegian;\npl:Polish;\npt:Portuguese;\npt_BR:Brazilian Portuguese;\nro:Romanian;\nru:Russian;\nsk:Slovak;\nsl:Slovenian;\nsq:Albanian;\nsr:Serbian;\nsv:Swedish;\nth:Thai;\ntr:Turkish;\nuk:Ukrainian;\nvi:Vietnamese;\nzh:Chinese (Trad.)",
+    "TYPO3XliffPathToExtensionLanguageFiles": "Resources/Private/Language/",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/tzuhsun/angular_try/angular-meme/my-angular-meme",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.i18nally.jetbrainsideplugin.settings.AllyProjectConfigurable",
+    "ts.external.directory.path": "/home/tzuhsun/angular_try/angular-meme/meme-generator-stackend/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/frontend/src/locale" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/frontend/dist" />
+      <recent name="$PROJECT_DIR$/frontend/dist/my-angular-meme/" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1988a339-f9ac-42a5-9509-05032e07ca80" name="Changes" comment="" />
+      <created>1690623739136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690623739136</updated>
+      <workItem from="1690623740455" duration="1877000" />
+      <workItem from="1691149029948" duration="13900000" />
+      <workItem from="1691170153018" duration="24315000" />
+      <workItem from="1691297210916" duration="12826000" />
+      <workItem from="1691417525382" duration="8564000" />
+      <workItem from="1691458897386" duration="14005000" />
+      <workItem from="1691484566296" duration="6910000" />
+      <workItem from="1691558679623" duration="28788000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="redirect / i18n / rearrange&#10;&#10;- rearrange the home component&#10;- add angular i18n&#10;- add locale files&#10;- add redirect tricks&#10;- merge stackend / frontend" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

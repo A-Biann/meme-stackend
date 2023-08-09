@@ -1,0 +1,38 @@
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  font-size: 3.3rem;
+  font-family: 'Impact';
+  font-weight: bold;
+  color: #ffffff;
+  context-stroke: 2px black;
+  -webkit-text-stroke: 2px black;
+  line-height: 1;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-email {
+  color: gray;
+  margin-top: 5px;
+  font-size: 14px;
+}

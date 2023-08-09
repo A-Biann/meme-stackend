@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "site": "meme-generater-stackend",
+    "public": "dist/my-angular-meme",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/en-US/**",
+        "destination": "/en-US/index.html"
+      },
+      {
+        "source": "/tw/**",
+        "destination": "/tw/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/en-US",
+        "type": 301
+      }
+    ]
+  }
+}

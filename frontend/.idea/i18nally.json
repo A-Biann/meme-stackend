@@ -1,0 +1,51 @@
+{
+  "version" : "1.2",
+  "profiles" : [ {
+    "id" : "269b7dd4-db7d-43dc-8ac7-583e68dcb57c",
+    "name" : "Default",
+    "keyNamingPattern" : "SNAKE_CASE_PATTERN",
+    "sink" : {
+      "id" : "136ee086-21e8-4005-9558-1a508e2d3235",
+      "type" : "namespaced",
+      "translationsDirectory" : "$PROJECT_DIR$/frontend/src/locale",
+      "fileType" : "xliff/xlf",
+      "defaultLocale" : "en-US",
+      "namespaces" : [ "messages" ],
+      "outputFilenameTemplate" : "%namespace%.%locale%.xliff",
+      "nestingType" : "DISABLED",
+      "placeholderFormatterName" : "SYMFONY_REPLACEMENT"
+    },
+    "sources" : [ {
+      "id" : "7e610024-e287-47ef-bf03-b4ed996da4d7",
+      "type" : "js",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "$t('%key%', %map%)",
+      "recognizedReplacementTemplates" : [ ],
+      "skipDefaultNamespace" : false
+    }, {
+      "id" : "4e9787a7-6080-48d3-bc84-2e7cc97155b1",
+      "type" : "htmlphp",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "prefix" : "<?php echo ",
+      "defaultReplacementTemplate" : "_('%key%', %map%, '%namespace%')",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "postfix" : " ?>",
+      "inlineTagNames" : [ "a", "abbr", "acronym", "b", "bdi", "bdo", "big", "br", "cite", "code", "data", "del", "dfn", "em", "i", "img", "input", "ins", "kbd", "label", "mark", "meter", "output", "progress", "q", "ruby", "s", "samp", "slot", "small", "span", "strong", "sub", "sup", "time", "u", "tt", "var", "wbr" ],
+      "translatableAttributeNames" : [ "title", "alt", "placeholder", "label", "aria-label" ],
+      "skipDefaultNamespace" : false,
+      "sprintfMode" : false
+    } ]
+  } ],
+  "ignores" : {
+    "valuesInProject" : [ "use strict" ],
+    "valuesInFile" : { },
+    "filesInProject" : [ ],
+    "unignoredFunctionNames" : [ ],
+    "unignoredFunctionArguments" : { },
+    "ignoredArrayKeys" : [ "class", "selector", "template", "middleware", "layout", "el", "component", "type", "name", "id", "key", "sql", "query", "dateFormat", "date", "condition" ]
+  }
+}

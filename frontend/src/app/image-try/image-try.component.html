@@ -1,0 +1,11 @@
+<!-- image-uploader.component.html -->
+
+<div>
+  <label for="imageUrlInput">輸入圖片URL:</label>
+  <input id="imageUrlInput" [(ngModel)]="imageUrl" placeholder="請輸入圖片URL" />
+  <button (click)="loadImage()">載入圖片</button>
+</div>
+
+<div *ngIf="imageToShow">
+  <img [src]="imageToShow" alt="圖片" />
+</div>

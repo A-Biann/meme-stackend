@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+
+  // Configuration
+  let languageList = ['en-US', 'tw'];
+  let defaultLocale = 'en-US';
+  let url = "http://localhost:8080/";
+  let routing = {
+    "en-US": url + 'en-US',
+    "tw": url + 'tw',
+    "zh": url + 'tw',
+    "en": url + 'en-US',
+  };
+
+  // Functions
+  function getBrowserLanguage() {
+    if (!navigator) return null;
+    if (navigator.languages && navigator.languages.length > 0) return navigator.languages[0];
+    return navigator.language;
+  }
+  function getSubPath() {
+    let url = window.location.href;
+    let domainNameIndex = url.indexOf("//");
+    let firstSlashIndex = url.indexOf("/", domainNameIndex + 2);
+    if (firstSlashIndex === -1) return null;
+    let subPath = url.substring(firstSlashIndex + 1);
+    return subPath;
+  }
+
+  function redirectToRoute(locale, subPath) {
+    console.log('matching locale ' + locale + ' ...');
+    let route = routing[locale];
+    if (route != null) {
+      console.log('will redirect to ' + route);
+      if (subPath) {
+        if (!route.endsWith('/')) route += '/';
+        route += subPath;
+        console.log('full url will be ' + route);
+      }
+      window.location.replace(route);
+      return;
+    }
+    // Check for invalid locale
+    let parts = locale.split('-');
+    if (parts == null || parts.length <= 1) return;
+    // Try to redirect to pure locale
+    console.log("will try to use just the language");
+    redirectToRoute(parts[0], subPath);
+  }
+
+  // Redirect
+  let locale = getBrowserLanguage();
+  if (locale == null) {
+    locale = localStorage.getItem('locale');
+  }
+  if (locale == null) {
+    locale = defaultLocale;
+  }
+  console.log('stored locale: ' + locale);
+  let subPath = getSubPath();
+  redirectToRoute(locale, subPath);
+</script>
+</body>
+</html>
