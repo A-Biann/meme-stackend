@@ -29,7 +29,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": true,
+            "i18nMissingTranslation": "error",
             "outputPath": "dist/my-angular-meme",
             "baseHref": "/",
             "index": "src/index.html",
@@ -38,7 +38,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -52,6 +52,7 @@
               "localize": ["tw"]
             },
             "production": {
+              "localize": true,
               "aot": true,
               "budgets": [
                 {
@@ -91,7 +92,7 @@
               "browserTarget": "my-angular-meme:build:production"
             },
             "tw": {
-              "browserTarget": "my-angular-meme:build:tw"
+              "browserTarget": "my-angular-meme:build:development,tw"
             },
             "development": {
               "browserTarget": "my-angular-meme:build:development"

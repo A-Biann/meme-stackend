@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectSettingsService">
+    <option name="localesDirectory" value="$PROJECT_DIR$/frontend/src/locale" />
+    <option name="parserStrategy" value="PROPERTIES" />
+    <option name="filePattern" value="*.xlf" />
+    <option name="sorting" value="false" />
+    <option name="defaultNamespace" value="" />
+  </component>
+</project>
