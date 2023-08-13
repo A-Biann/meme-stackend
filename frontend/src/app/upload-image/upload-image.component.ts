@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { ImageUploadService } from './load-image.service';
 
 @Component({
   selector: 'app-upload-image',
@@ -8,13 +9,14 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class UploadImageComponent implements OnInit {
   urlDialogVisible = false;
   imageUrl: string = '';
+  urlToShow: string = '';
   @Output() imageUrlUpdated: EventEmitter<string> = new EventEmitter<string>();
-  constructor() {}
+  constructor(private imageUploadService: ImageUploadService) {}
 
   ngOnInit(): void {}
 
   openUrlDialog() {
-    this.urlDialogVisible = true;
+    this.urlDialogVisible = !this.urlDialogVisible;
   }
 
   closeUrlDialog() {
@@ -23,9 +25,31 @@ export class UploadImageComponent implements OnInit {
 
   onUrlSubmit() {
     if (this.imageUrl) {
-      this.imageUrlUpdated.emit(this.imageUrl);
+      this.imageUploadService
+        .loadImage(this.imageUrl)
+        .then(imageUrl => {
+          this.urlToShow = imageUrl;
+          this.imageUrlUpdated.emit(this.urlToShow);
+        })
+        .catch(error => {
+          console.error('Error loading image:', error);
+        });
       console.log(this.imageUrl);
     }
     this.closeUrlDialog();
+  }
+  onFileChange(fileEvent: Event) {
+    const fileInput = fileEvent.target as HTMLInputElement;
+    if (fileInput.files) {
+      const file = fileInput.files[0];
+      if (file) {
+        const fileReader = new FileReader();
+        fileReader.onload = (e: ProgressEvent<FileReader>) => {
+          this.urlToShow = e.target?.result as string;
+          this.imageUrlUpdated.emit(this.urlToShow);
+        };
+        fileReader.readAsDataURL(file);
+      }
+    }
   }
 }

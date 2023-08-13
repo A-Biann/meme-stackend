@@ -16,8 +16,18 @@
   line-height: 1;
 }
 
+@media (max-width: 500px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
+
 .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background: transparent;
+
 }
 
 .user-profile {

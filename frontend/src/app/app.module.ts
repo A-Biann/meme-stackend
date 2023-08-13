@@ -57,7 +57,7 @@ const routes: Routes = [
     MatCardModule,
     MatSelectModule,
     MatOptionModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
 
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy } ],

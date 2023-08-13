@@ -18,7 +18,7 @@
       </trans-unit>
       <trans-unit id="welcomeMessage" datatype="html">
         <source>Welcome to our app!</source>
-        <target state="new">歡迎</target>
+        <target state="new"></target>
       </trans-unit>
     </body>
   </file>

@@ -1,10 +1,18 @@
+<input id="upload-meme" type="file" (change)="onFileChange($event)" #fileInput style="display: none">
+
 <div class="upload">
+  <button class="upload_button"
+          mat-raised-button
+          color="primary"
+          (click)="fileInput.click()">Choose a file
+  </button> &nbsp;
   <button class="upload_button"
           mat-raised-button
           color="primary"
           (click)="openUrlDialog()">Paste URL
   </button>
 </div>
+<!--<img *ngIf="urlToShow" [src]="urlToShow" alt="Uploaded Image">-->
 
 <div *ngIf="urlDialogVisible" class="url-dialog"><br>
   <input matInput
@@ -15,5 +23,4 @@
     <button mat-raised-button (click)="closeUrlDialog()">Cancel</button> &nbsp;
     <button mat-raised-button (click)="onUrlSubmit()">Submit</button>
   </div>
-
 </div>

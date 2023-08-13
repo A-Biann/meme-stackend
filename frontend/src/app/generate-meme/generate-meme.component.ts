@@ -1,7 +1,6 @@
 import {Component, ViewChild, ElementRef, Input, OnInit, AfterViewInit, OnChanges, SimpleChanges} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import * as p5 from 'p5';
-import {ImageUploadService} from "./load-image.service";
 
 @Component({
   selector: 'app-generate-meme',
@@ -15,7 +14,7 @@ export class GenerateMemeComponent implements OnInit, AfterViewInit, OnChanges{
   urlToShow!: string;
   p5Sketch!: p5;
   form!: FormGroup;
-  constructor(private formBuilder: FormBuilder, private imageUploadService: ImageUploadService) {
+  constructor(private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
       topText: [],
       bottomText: [],
@@ -25,40 +24,28 @@ export class GenerateMemeComponent implements OnInit, AfterViewInit, OnChanges{
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {
-    this.initCanvas(this.urlToShow);
+    this.initCanvas();
   }
+
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.imageUrl.currentValue && !changes.imageUrl.firstChange) {
-      this.imageUploadService.loadImage(this.imageUrl).subscribe(data => {
-        let reader = new FileReader();
-        reader.addEventListener('load', () => {
-          this.imageToShow = reader.result as string;
-          this.p5Sketch.remove();
-          this.form.reset();
-          if (typeof this.imageToShow === 'string') {
-            this.urlToShow = this.imageToShow;
-            this.initCanvas(this.urlToShow);
-          }
-        }, false);
-
-        if (data) {
-          reader.readAsDataURL(data);
-        }
-      });
+      this.p5Sketch.remove();
+      this.form.reset();
+      this.initCanvas();
     }
   }
   generateMeme() {
     this.p5Sketch.remove();
-    this.initCanvas(this.urlToShow);
+    this.initCanvas();
   }
   downloadMeme() {
     if (this.form.valid) {
       this.p5Sketch.save('meme');
     }
   }
-  private initCanvas(url: string) {
+  private initCanvas() {
     this.p5Sketch = new p5((p: p5) => {
-      const imageUrl = url;
+      const imageUrl = this.imageUrl;
       p.setup = () => {
         p.createCanvas(600,400);
         p.loadImage(imageUrl, (img) => {
